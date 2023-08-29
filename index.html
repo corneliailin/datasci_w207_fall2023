@@ -4,7 +4,7 @@
 
 
 <head>
-  <title>DataSci W207: Applied Machine Learning (Fall 2022)</title>
+  <title>DataSci 207: Applied Machine Learning (Fall 2023)</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -44,7 +44,7 @@
 		  
           </li>
           <li><a href="#project-submissions">Assignments and Final Project Submission Guidelines</a></li>    
-	  <li><a href="https://learn.datascience.berkeley.edu/">ISVC</a></li>
+	  <li><a href="https://learn.datascience.berkeley.edu/">bCourses</a></li>
         </ul>
 	      
       </div>
@@ -53,10 +53,10 @@
 
 	
 <div class="jumbotron">
-<h1>DataSci W207: </br>
+<h1>DataSci 207: </br>
     Applied Machine Learning</h1>
-<h3> Lecture: Mo, Wed, Th </h3>
-<h3> Office hours: Tu, 8-9 am PT</h3>	
+<h3> Lecture: Wed </h3>
+<h3> Office hours: Th, 4-5 pm PT</h3>	
 </div>
 
 <div class="panel panel-default">
@@ -67,7 +67,7 @@
 		We start with linear and logistic regression and implement gradient descent for these algorithms, the core engine for training. 
 		With these key building blocks, we work our way to understanding widely used neural network architectures, 
 		focusing on intuition and implementation with TensorFlow/Keras. While the course centers on neural networks, we will make sure to cover key ideas in unsupervised learning and nonparametric modeling.</p>
-	<p>Along the way, <b>weekly short coding assignments</b> will connect lectures with concrete data and real applications.
+	<p>Along the way, <b>weekly short coding assignments</b> and a midterm exam will connect lectures with concrete data and real applications.
 		A more <b>open-ended final project</b> will tie together crucial concepts in experimental design and analysis with models and training.</p>
 	<p> This class meets for one 90 min class periods each week.</p>
 	<p> All materials for this course are posted on GitHub in the form of Jupyter notebooks.</p>
@@ -110,7 +110,7 @@
 		<li><p>Python (v3).</p>
 		<li><p>Jupiter and JupiterLab notebooks. You can install them in your computer using <a href="https://pypi.org/project/pip/">pip</a> or <a href="https://www.anaconda.com/">Anaconda</a>. More information <a href="https://jupyter.org/install">here</a>.</p>	    
 	  	<li><p>Git(Hub), including clone/commmit/push from the command line. You can sign up for an account <a href="https://github.com/join">here.</a></p>
-		<li><p>If you have a MacOS M1, this <a href = "./macOS_M1_install/Prerequisite-install.sh">.sh script</a> will install everything for you (credit goes to one of my former students, Michael Tay)</p>	
+		<li><p>If you have a MacOS M1, this <a href = "./macOS_M1_install/207_sh.sh">.sh script</a> will install everything for you (credit goes to one of my former students, Kevin Stallone)</p>	
 	  </ul>	 
 	
 	  <p> <b>OS</b>
@@ -127,14 +127,20 @@
 
 	  <p><b>Assignments</b>
 	    <ul>
-		<li>Weekly coding assignments, submitted via GitHub and Digital Campus (see notes below).</li> 
+		<li>Weekly coding assignments, submitted via Gradescope (see notes below).</li> 
+	    </ul>
+	  </p>
+
+	  <p><b>Midterm exam</b>
+	    <ul>
+		<li>The URL link for the exam will be added to bCourses on the exam date. More information to follow.</li> 
 	    </ul>
 	  </p>
 
 	  <p><b>Final Project</b>
 	    <ul>
 		<li> You will present your final project in class during the final session. You are allowed to work in teams.</li>
-		<li> You will submmit your code and presentation slides via GitHub and Digital Campus (see notes below).</li>  
+		<li> You will submmit your code and presentation slides via GitHub (see notes below).</li>  
 	    </ul>
 	  </p>
    </div>
@@ -157,7 +163,7 @@
       <th>Lecture</th>
       <th>Lecture Materials</th>
       <th>Readings</th>
-      <th>Deadlines (Sunday of the week, 11:00 pm PT)</th>
+      <th>Deadlines (Sunday of the week, 11:59 pm PT)</th>
     </tr>
   
     <tr>
@@ -165,109 +171,100 @@
     </tr>
 	  
    <tr>
-	    <td>Aug 22-28</td>
+	    <td>Aug 28-Sept 3</td>
 	    <td>Introduction and Framing</td>
-	    <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week01">Week 01</a></td> 
+	    <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week01">Week 01</a></td> 
 	    <td class="side-borders"></td> 
 	    <td></td> 
 	    <td></td>  
    </tr>
 
    <tr>
-	    <td>Aug 29 - Sept 04</td>
-	    <td>Linear Regression - part 1</td>
-	    <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week02">Week 02</a></td>   
+	    <td>Sept4-10</td>
+	    <td>Linear Regression - Gradient Descent</td>
+	    <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week02">Week 02</a></td>   
 	    <td class="side-borders">RM (10, 13 - intro to TensorFlow only), <a href="https://sebastianraschka.com/Articles/2014_about_feature_scaling.html">feature scaling</a>, <a href="https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf">more math (1)</a></td> 
-	    <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/01%20Introduction.ipynb">Assignment 1</a></td>
+	    <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/01%20Introduction.ipynb">Assignment 1</a></td>
 	    	    
    </tr>
 
    <tr>
-	    <td>Sept 05-11</td>
-	    <td>Linear Regression - part 2</td>
-	    <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week03">Week 03</a></td>      
+	    <td>Sept 11-17</td>
+	    <td>Linear Regression - Feature Engineering</td>
+	    <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week03">Week 03</a></td>      
 	    <td class="side-borders">RM (4, 2), <a href="https://www.nature.com/articles/s41598-021-92892-8.epdf?sharing_token=XmClBG-Ang4L6rSHBdcZTNRgN0jAjWel9jnR3ZoTv0P5L7M0o_Ue2T7O6vYasC-Z-6fBkDi2rLMQFNHaxN662UHvSQ3n65X-ShzzRWOSmMjsmQYVFduLkI9F_jYWfMfSCKWSFQvjbXpePl-uDGyBk-jocsQ0dFCvpVhDvU1R__A%3D">Ilin et al. (2021)</a></td> 
-	    <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/02%20Linear%20Regression.ipynb">Assignment 2</a></td> 
+	    <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/02%20Linear%20Regression.ipynb">Assignment 2</a></td> 
 	  
    </tr>
 
    <tr>
-	    <td>Sept 12-18</td>
-	    <td>Logistic Regression - part 1</td>
-	    <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week04">Week 04</a></td>   
+	    <td>Sept 18-24</td>
+	    <td>Logistic Regression - Binary</td>
+	    <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week04">Week 04</a></td>   
 	    <td class="side-borders">RM (3, 6 (p.211-219)), <a href="https://cs229.stanford.edu/lectures-spring2022/main_notes.pdf">more math (2)</a></td> 
-	    <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/03%20Linear%20Regression%20with%20Tensorflow.ipynb">Assignment 3</a><br>Group, question, and dataset for final project</td>
+	    <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/03%20Linear%20Regression%20with%20Tensorflow.ipynb">Assignment 3</a><br>Group, question, and dataset for final project</td>
 	    
    </tr>
 
    <tr>
-	     <td>Sept 19-25</td>
-	     <td>Logistic Regression - part 2</td>
-	     <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week05">Week 05</a></td>  
+	     <td>Sept 25-Oct 01</td>
+	     <td>Logistic Regression - Multiclass</td>
+	     <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week05">Week 05</a></td>  
 	     <td class="side-borders">RM (3, 6 (p.211-219)), <a href="https://sebastianraschka.com/faq/docs/softmax_regression.html">more intuition</a></td> 
-	     <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/04%20Logistic%20Regression%20with%20Tensorflow.ipynb">Assignment 4</a></td>  
+	     <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/04%20Logistic%20Regression%20with%20Tensorflow.ipynb">Assignment 4</a></td>  
 	    
    </tr>
 
    <tr>
-	    <td>Sept 26 - Oct 02</td>
+	    <td>Oct 02-08</td>
 	    <td>Feedforward Neural Networks</td>
-	     <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week06">Week 06</a></td>  
+	     <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week06">Week 06</a></td>  
 	    <td class="side-borders">RM (12, 13, 14), <a href="https://www.v7labs.com/blog/neural-networks-activation-functions">activation functions</a>, <a href="https://sebastianraschka.com/pdf/lecture-notes/stat453ss21/L10_regularization__slides.pdf">regularization</a></td> 
-   	    <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/05%20Multiclass%20Classification.ipynb">Assignment 5</a></td> 
+   	    <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/05%20Multiclass%20Classification.ipynb">Assignment 5</a></td> 
 	   
 
    </tr>
 
    <tr>
-	   <td>Oct 03-09</td>
+	   <td>Oct 09-15</td>
 	   <td>KNN, Decision Trees, and Ensembles</td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week07">Week 07</a></td> 
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week07">Week 07</a></td> 
 	   <td class="side-borders">RM (3, 7), <a href="https://www.mdpi.com/1424-8220/22/17/6600/htm">Psaltos et al (2022)</a></td> 
-	   <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/06%20Neural%20Networks.ipynb">Assignment 6</a></td> 
+	   <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/06%20Neural%20Networks.ipynb">Assignment 6</a> <br> Midterm exam</td> 
 	   
    </tr>
 
 	  
    <tr>
-	    <td>Oct 10-16</td>
-	    <td>K-Means and PCA <br> <b>Project: baseline presentation</b><br> 
-	    <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week08">Week 08</a></td> 
+	    <td>Oct 16-22</td>
+	    <td>Unsupervised Learning: K-Means and PCA <br> <b>Project: baseline presentation</b><br> 
+	    <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week08">Week 08</a></td> 
 	    <td class="side-borders">RM (11)</td> 
 	    <td>Assignment 7 <br> Baseline presentation: slides</td> 
 
     </tr>
 	  
    <tr>
-	   <td>Oct 17-23</td>
-	   <td>Sequence modelling and embeddings</td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week09">Week 09</a></td> 
+	   <td>Oct 23-29</td>
+	   <td>Embeddings for Text</td>
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week09">Week 09</a></td> 
 	   <td class="side-borders">RM (8, 16)</td> 
-	   <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/08%20Kmeans%20Clustering.ipynb">Assignment 8</a> </td> 
+	   <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/08_Kmeans_Clustering.ipynb">Assignment 8</a> </td> 
 
    </tr>
 
   
    <tr>
-	   <td>Oct 24-30</td>
+	   <td>Oct 30-Nov 05</td>
 	   <td> Convolutional Neural Networks</td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week10">Week 10</a></td> 
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week10">Week 10</a></td> 
 	   <td class="side-borders">RM (15), <a href="https://cezannec.github.io/CNN_Text_Classification/">1D CNN intuition</a>, <a href="https://arxiv.org/abs/1408.5882">Yoon Kim (2014)</a></td> 
-   	   <td> <a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/09%20Embeddings%20for%20Text.ipynb">Assignment 9</a></td> 
+   	   <td> <a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/09%20Embeddings%20for%20Text.ipynb">Assignment 9</a></td> 
 
   </tr>
-
-
-   <tr>
-	   <td>Oct 31 - Nov 06</td>
-	   <td>Network Architecture and Debugging ML algorithms <br></td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week11">Week 11</a></td> 
-	   <td class="side-borders"><a href="https://cs229.stanford.edu/materials/ML-advice.pdf">Andrew Ng's advice for Applying ML</a></td> 
-	   <td><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/blob/main/Homework/10%20CNN.ipynb">Assignment 10</a><br></td> 
-   </tr>
 	  
     <tr>
-	   <td>Nov 07-13</td>
+	   <td>Nov 06-12</td>
 	   <td>Fall Break<br></td>
 	   <td class="side-borders"></td> 
 	   <td class="side-borders"></td> 
@@ -275,32 +272,40 @@
    </tr>
 
    <tr>
-	   <td>Nov 14-20</td>
-	   <td>Fairness in ML</td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week12">Week 12</a></td> 
-	   <td class="side-borders"><a href="https://dl.acm.org/doi/pdf/10.1145/3465416.3483305">Suresh and Guttag (2021)</a></td> 
-	   <td> </td>   
+	   <td>Nov 13-19</td>
+	   <td>Network Architecture and Debugging ML algorithms <br></td>
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week11">Week 11</a></td> 
+	   <td class="side-borders"><a href="https://cs229.stanford.edu/materials/ML-advice.pdf">Andrew Ng's advice for Applying ML</a></td> 
+	   <td><a href="https://github.com/MIDS-W207/coursework_2022/blob/main/Homework/10%20CNN.ipynb">Assignment 10</a><br></td> 
    </tr>
-	  
-    <tr>
-	   <td>Nov 21-27</td>
+
+<tr>
+	   <td>Nov 20-26</td>
 	   <td>Thanksgiving Break<br></td>
 	   <td class="side-borders"></td> 
 	   <td class="side-borders"></td> 
 	   <td></td> 
    </tr>
+
+   <tr>
+	   <td>Nov 27-Dec 03</td>
+	   <td>Fairness in ML</td>
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week12">Week 12</a></td> 
+	   <td class="side-borders"><a href="https://dl.acm.org/doi/pdf/10.1145/3465416.3483305">Suresh and Guttag (2021)</a></td> 
+	   <td> </td>   
+   </tr>
 	 
 	  
    <tr>
-	   <td>Nov 28 - Dec 04</td>
-	   <td>Advanced Topics: RNN, Transformers, BERT</td>
-	   <td class="side-borders"><a href="https://github.com/MIDS-W207/cilin-coursework-fall2022/tree/main/Live_Sessions/week13">Week 13</a></td> 
+	   <td>Dec 04-10</td>
+	   <td>Advanced Topics: RNN/LSTMs, Transformers, BERT</td>
+	   <td class="side-borders"><a href="https://github.com/MIDS-W207/coursework_2022/tree/main/Demos_CorneliaIlin/week13">Week 13</a></td> 
 	   <td class="side-borders"><a href="https://berkeley.primo.exlibrisgroup.com/permalink/01UCS_BER/1thfj9n/alma9917493264406531">Rashka et al, ch. 16 (2022)</a></td> 
 	   <td> </td>    
    </tr>
 	  	  
    <tr>
-	   <td>Dec 04-11</td>
+	   <td>Dec 11-17</td>
 	   <td><b>Project: final presentation </b></td>
 	   <td class="side-borders"></td> 
 	   <td class="side-borders"></td> 
@@ -337,7 +342,7 @@
 
     <tr>	  
       <td>1, 5, 8</td>
-      <td>#datasci-207-2022-fall-ci</td>     
+      <td>#datasci-207-2023-fall-ci</td>     
     </tr>
   </tbody>
 </table>
@@ -345,11 +350,18 @@
 </div>
 </div> 
 
+<div class="panel panel-default">
+  <div class="panel-heading">Midterm Exam</div>
+  <div class="panel-body">
+    <p> How do I take the exam? the URL link for the exam will be added to bCourses on the exam date. More information to follow.</p>
+    <p> What is the best way to prepare for the exam? going over the async material, live sessions, homework, and assigned readings covered in weeks 1-6 is all you need to do.</p>
+    <p> Can I use ChatGPT? My advice is not to rely on ChatGPT for answers during the Midterm exam - some responses are wrong! please just rely on your understanding of the material.</p>
+    <p>	What is the best way to access the exam solutions? Attend any of the OH the week after the midterm exam; your instructors will discuss midterm solutions based on your questions.</p>
 
 <div class="panel panel-default">
   <div class="panel-heading">Final Project</div>
   <div class="panel-body">
-    <p> For the final project you will form a group (3-4 people are ideal; 2-5 people are allowed; no 1 person group allowed). 
+    <p> For the final project you will form a group (3-4 people are ideal). 
 	    Grades will be calibrated by group size. 
 	    Your group can only include members from the section in which you are enrolled. </p>
     <p> Do not just re-run an existing code repository; at the minimum, you must demonstrate the ability to 
@@ -359,8 +371,8 @@
 	<ul>
 	    <li> week 04: inform me <a href="https://docs.google.com/spreadsheets/d/1WE8Fwp-V4S2RQIxz9w64LShvvf12O6_mpJDD0MqSF5w/edit?usp=sharing">here</a>
 				       about your group, question and dataset you plan to use. </li>
-	    <li> week 08: prepare the baseline presentation of your project. You will present in class (no more than 10 min). </li>
-	    <li> week 16: prepare the final presentation of your project. You will present in class (no more than 20 min).</li>
+	    <li> week 08: prepare the baseline presentation of your project. You will present in class (no more than 12 min). </li>
+	    <li> week 16: prepare the final presentation of your project. You will present in class (no more than 12 min).</li>
 	</ul>
 	</p>	
 	
@@ -397,12 +409,12 @@
 			Describe your overall plan to approach your question. Provide a summary of your results. </li>
 		    <li><b>(15%) Data:</b> Describe in detail the data that you are using, 
 			including the source(s) of the data and relevant statistics. </li>
-		    <li><b>(15%) Approach:</b> Describe in detail the models (baseline + improvement over baseline) that you use 
+		    <li><b>(15%) Modeling:</b> Describe in detail the models (baseline + improvement over baseline) that you use 
  			in your approach. </li>
 		    <li><b>(30%) Experiments:</b> Provide insight into the effect of different hyperperameter choices. Please include tables, figures, graphs to illustrate your experiments. </li>
 		   <li><b>(10%) Conclusions:</b> Summarize the key results, what has been learned, and avenues for future work. </li>
 		   <li><b>(15%) Code submission:</b> Provide link to your GitHub repo. The code should be well commented and organized.</li>
-		   <li>Contributions: Specify the contributions of each author (e.g., data processing, algorithm implementation, slides etc).</li>
+		   <li>Contributions: Specify the contributions of each author (e.g., data processing, algorithm implementation, slides etc.).</li>
 	   </ul>
         </p>
 
@@ -415,9 +427,8 @@
   <div class="panel-body">
     <a name="project-submissions"></a>	
 	<ul>
-		<li> Step 1: Create GitHub repos for Assignments 1-10 and Final Project </li>
-		<li> Step 2: If weekly assignments, upload .ipynb file in Gradescope. If final project, upload an .ipynb file that contains the link to your group GitHub repo (add your presentation slides to the repo; each team member submits in Gradescope)</li>
-	         			
+		<li>Create a GitHub repo for Assignments 1-10. Upload the homework's .ipynb file to Gradescope each week before the deadline.</li>
+		<li>Create a team GitHub repo for Final Project. This repo will contain your code as well as PowerPoint slides. Add me as a contributor if your repo is private (my username is corneliailin), and add the link to your repo <a href="https://docs.google.com/spreadsheets/d/1WE8Fwp-V4S2RQIxz9w64LShvvf12O6_mpJDD0MqSF5w/edit?usp=sharing">here</a>.			
 	</ul>
 
 </div>
@@ -430,9 +441,10 @@
     <a name="grading"></a>
     <table class="table">      
       <tr><td>Participation</td><td>5%</td>      
-      <tr><td>Assignments</td><td>65%</td>
+      <tr><td>Assignments</td><td>45%</td>
+      <tr><td>Midterm</td><td>20%</td>
       <tr><td>Final project</td><td>30%</td>
-      <p>Final grades will be determined by computing the weighted average of programming projects, 
+      <p>Final grades will be determined by computing the weighted average of homework, mideterm exam, 
 	      final group project, and participation.</p>
       <p> Baseline grading range for this course is: A for 93 or above,
 	     A- for 90 or above, B+ for 87 or above, B for 83 or above, B- for 80 or above, C+ for 77 or above, C for 73 or above,
